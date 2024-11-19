@@ -1,0 +1,19 @@
+li {
+    transition: 1s;
+    transform-origin: left center;
+}
+
+input {
+    margin: 4px;
+    color: blue;
+    border: 0px transparent;
+    border-bottom: 1px solid lightgray;
+    outline: 0px transparent;
+}
+
+
+/* 1 hover, visited, active */
+
+/* 2 focus, disabled */
+
+/* 3 nth-child, nth-of-type, not */

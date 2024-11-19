@@ -1,0 +1,43 @@
+/* 1. Hover Visited and Active */
+li:hover {
+    background-color: yellow;
+    transform: scale(1.1);
+}
+
+a:visited {
+    color: green;
+    font-size: 1.5em;
+}
+
+a:active {
+    color: magenta;
+}
+
+
+/* 2. Focus and Disabled */
+input:focus {
+    border-bottom: 1px solid black;
+    background-color: lightgray;
+}
+
+input:disabled {
+    border-bottom-style: dashed;
+}
+
+
+/* 3 nth-child, nth-of-type, not */
+td:nth-child(3) {
+    color: green;
+}
+
+tr:nth-child(-2n + 5) {
+    background-color: lightgray;
+}
+
+h1:nth-of-type(4) {
+    background-color: pink;
+}
+
+.nth-of-type-demo .a:not(.b) {
+    background-color: yellow;
+}
