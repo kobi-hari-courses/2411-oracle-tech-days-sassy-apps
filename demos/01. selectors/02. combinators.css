@@ -1,0 +1,22 @@
+.shopping-list {
+    background-color: lightblue;
+}
+ 
+
+
+
+/* 1. descendants combinator: sel1 sel2 */
+
+/* 2. direct child combinator: sel1 > sel2 */
+
+/* 3. and combinator: .sel1.sel2 */
+
+/* 4.  or combinator: sel1, sel2 */
+
+/* 5. following combinator: sel1 ~ sel2 */ 
+
+/* 6. directly following sibling combinator sel1 + sel2 */
+
+/* 7. putting it all togehter
+
+

@@ -1,14 +1,3 @@
-body {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-}
-
-a { 
-    color: #0074d9;
-    text-decoration: none;
-}
-
 [href^="https"] {
     border-left: 4px solid #2ecc40;
 }
@@ -32,4 +21,4 @@ a {
 
 [status="open" i] {
     color: #4da97f;
-}
+} 
