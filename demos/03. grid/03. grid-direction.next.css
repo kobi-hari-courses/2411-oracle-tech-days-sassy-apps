@@ -1,0 +1,16 @@
+/* 01. Define grid flow direction */
+
+.container {
+    grid-auto-flow: row ;
+}
+
+/* 02. Define grid auto generation */
+.container {
+    grid-auto-rows: 1fr;
+    grid-auto-columns: 1fr;
+}
+
+/* 03. dense vs not */
+.container {
+    grid-auto-flow: row dense;
+}

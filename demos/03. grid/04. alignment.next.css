@@ -1,0 +1,38 @@
+/* 01. justify-content */
+
+.container {
+    justify-content: center;
+}
+
+/* 02. align-content */
+.container {
+    align-content: end;
+}
+
+/* 03. justify-items */
+.container {
+    justify-items: start;
+}
+
+/* 04. align-items */
+.container {
+    align-items: center;
+}
+
+/* 05. justify-self */
+.grid-item:nth-child(4) {
+    justify-self: end;
+}
+
+.grid-item:nth-child(5) {
+    justify-self: center;
+}
+
+/* 06. align-self */
+.grid-item:nth-child(3) {
+    align-self: start;
+}
+
+.grid-item:nth-child(5) {
+    align-self: center;
+}

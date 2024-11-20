@@ -1,0 +1,36 @@
+/* 01. grid template */
+.container {
+    grid-template-columns: repeat(3, 2fr) 200px repeat(3, 1fr);
+    grid-template-rows: 10em auto 50% 50%;
+}
+
+/* 02. grid semi-auto placement */
+.grid-item:nth-child(2) {
+    grid-column: 4;
+}
+
+.grid-item:nth-child(3) {
+    grid-column: 1;
+}
+
+/* 03. grid manual placement */
+.grid-item:nth-child(4) {
+    grid-column: 2 ;
+    grid-row: 1;
+}
+
+.grid-item:nth-child(5) {
+    grid-column: 3; 
+    grid-row: 1;
+}
+
+/* 04. span */
+.grid-item:nth-child(4) {
+    grid-column: 2 / span 2;
+    grid-row: 1;
+}
+
+.grid-item:nth-child(5) {
+    grid-column: span 2 / 3; 
+    grid-row: 1;
+}
