@@ -1,0 +1,40 @@
+/* 01. flex-grow: */
+
+.child {
+    flex-grow: 1;
+}
+
+.child:nth-child(1) {
+    flex-grow: 2;
+}
+
+.child:nth-child(4) {
+    flex-grow: 0;
+}
+
+
+/* 02. flex-shrink: */
+.child {
+    flex-shrink: 0;
+}
+
+.child:nth-child(1) {
+    flex-shrink: 1;
+}
+
+.child:nth-child(4) {
+    flex-shrink: 2;
+}
+
+/* 03. flex-basis: */
+.child {
+    flex-basis: 100px;
+}
+
+.child:nth-child(1) {
+    flex-basis: max-content;
+}
+
+.child:nth-child(4) {
+    flex-basis: 50px;
+}

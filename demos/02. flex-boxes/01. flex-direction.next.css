@@ -1,0 +1,21 @@
+/* 1. Flex direction - horizontal */
+.parent {
+    flex-direction: row;
+}
+
+/* 2. Flex direction - vertical */
+.parent {
+    flex-direction: column;
+}
+
+/* 3. Flex direction - horizontal reversed */
+.parent {
+    flex-direction: row-reverse;
+}
+
+/* 4. Flex direction - vertical reversed */
+.parent {
+    flex-direction: column-reverse;
+}
+
+

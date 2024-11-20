@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    direction: ltr;
+}
+
+.parent {
+    display: flex;    
+
+    width: 200px;
+    height: 200px;
+    background-color: lightgray;
+}
+
+.child {
+    background-color: aquamarine;
+    border: 2px solid blue;
+    margin: 4px;
+    padding: 5px;
+}
+
+/* 1. Flex direction */
+
+

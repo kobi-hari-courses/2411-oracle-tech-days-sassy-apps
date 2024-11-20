@@ -1,0 +1,33 @@
+/* 01. justify-content */
+.parent {
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* 02. main axis: start, center, end */
+.parent {
+    justify-content: center;
+    align-items: center;
+}
+
+/* 03. main axis: space disctibution */
+.parent {
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 04. secondary axis: start, center, end */
+.parent {
+    align-items: flex-start;
+}
+
+/* 05. secondary axis: stretch */
+.parent {
+    align-items: stretch;
+}
+
+/* 06. secondary axis: self-alignment */
+.child:nth-child(2) {
+    align-self: flex-start;
+}
+

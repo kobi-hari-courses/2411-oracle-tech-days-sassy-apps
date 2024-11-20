@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    direction: ltr;
+    padding: 40px;
+}
+
+.parent {
+    display: flex;
+    flex-direction: row;
+
+    width: 200px;
+    height: 200px;
+    background-color: lightgray;
+}
+
+.child {
+    background-color: aquamarine;
+    border: 2px solid blue;
+    margin: 4px;
+    padding: 5px;
+}
+
+.child:nth-child(2) {
+    background-color: lime;
+    align-self: flex-start;
+}
+
+.child:nth-child(3) {
+    background-color: pink;
+    align-self: flex-end;
+}
+
+.child:nth-child(4) {
+    background-color: yellow;
+    align-self: stretch;
+}
+
+/* 01. justify-content */
+/* 02. main axis: start, center, end */
+/* 03. main axis: space disctibution */
+/* 04. secondary axis: start, center, end */
+/* 05. secondary axis: stretch */
+/* 06. secondary axis: self-alignment */
+
+
