@@ -8,6 +8,14 @@
 Please feel free to contact me for questions, or just to have a chat :-)
 - Kobi Hari - hari@applicolors.com
 
+## Material 
+
+|   |    |  
+|-------------- | -------------- 
+| Our Demos    | [here](./demos/)     |
+| Our Presentation    | [here](./presentation/presentation.pdf)     |
+
+
 ## Agenda
 * CSS Tricks
   * Advanced Selectors
