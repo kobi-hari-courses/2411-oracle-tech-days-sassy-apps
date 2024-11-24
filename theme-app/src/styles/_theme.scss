@@ -1,0 +1,22 @@
+@mixin go() {
+    * {
+        ---primary: var(--primary, navy);
+        ---accent: var(--accent, orange);
+        ---dark: var(--dark, 0); 
+        ---darkness: calc((1 - var(---dark)) * 255);
+        ---inverse: calc(255 - var(---darkness));
+        ---bg-color: rgb(var(---darkness), var(---darkness), var(---darkness));
+        ---bg-inverse: rgb(var(---inverse), var(---inverse), var(---inverse));
+    
+        @for $i from 1 through 4 {
+            --p-#{$i}00: color-mix(in srgb, var(---primary), var(---bg-color) #{(5 - $i) * 20%});
+            --p-#{5 + $i}00: color-mix(in srgb, var(---primary), var(---bg-inverse) #{$i * 20%});
+            --a-#{$i}00: color-mix(in srgb, var(---accent), var(---bg-color) #{(5 - $i) * 20%});
+            --a-#{5 + $i}00: color-mix(in srgb, var(---accent), var(---bg-inverse) #{$i * 20%});
+        }
+        --p-500: var(---primary);
+        --a-500: var(---accent);
+        --background-color: var(---bg-color);
+        --text-color: var(---bg-inverse);    
+    }
+}

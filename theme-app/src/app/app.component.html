@@ -1,0 +1,19 @@
+    <div class="toolbar">
+        <select [(ngModel)]="selectedTheme">
+            @for(t of themes; track t[0]) {
+                <option [value]="t[0]">{{t[0]}}</option>
+            }
+        </select>
+    </div>
+    
+    <app-title caption="Hello World"/>
+    
+    <app-title caption="header 2"/>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, pariatur praesentium? Quisquam possimus recusandae voluptatum eveniet, voluptates ratione expedita dignissimos laborum at aperiam odit? Inventore iste esse laudantium aut mollitia.</p>
+    
+    <app-title caption="header 3"/>
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, pariatur praesentium? Quisquam possimus recusandae voluptatum eveniet, voluptates ratione expedita dignissimos laborum at aperiam odit? Inventore iste esse laudantium aut mollitia.</p>
+    
+    <app-title caption="header 4"/>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, pariatur praesentium? Quisquam possimus recusandae voluptatum eveniet, voluptates ratione expedita dignissimos laborum at aperiam odit? Inventore iste esse laudantium aut mollitia.</p>

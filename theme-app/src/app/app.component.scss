@@ -1,0 +1,32 @@
+:host {
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+}    
+
+h1 {
+    color: var(--p-500);
+    background: var(--p-100);
+    border: 1px solid var(--background-color);
+}
+
+p {
+    color: var(--p-400);
+}
+
+p:nth-of-type(2) {
+    --primary: brown;
+}
+
+app-title:nth-of-type(2n) {
+    --app-title-color: red;
+}
+
+app-title:nth-of-type(2n+1) {
+    --app-title-color: blue;
+}
+
+.kehe {
+    --primary: red;
+    --dark: 1;
+}
