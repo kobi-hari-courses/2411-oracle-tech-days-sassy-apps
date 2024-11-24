@@ -25,4 +25,11 @@ Please feel free to contact me for questions, or just to have a chat :-)
 * ScSS Style Preprocessor
 * Themeing Modern Applications
 
+## Links
+### Games
+* [Selectors Diner](https://flukeout.github.io/)
+* [Flex Froggey](https://flexboxfroggy.com/)
+* [Grid Garden](https://cssgridgarden.com/)
+
+
 
