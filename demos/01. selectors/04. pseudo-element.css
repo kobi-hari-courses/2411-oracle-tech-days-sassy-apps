@@ -4,6 +4,52 @@
     position: relative;
 }
 
+[explain]:hover {
+    background-color: rgba(255, 255, 0, 0.8);    
+}
+
+[explain]::before {
+    opacity: 0;
+    transition: 0.5s;
+}
+
+[explain]:hover::before {
+    content: attr(explain);
+    top: -20px;
+    inset-inline-start: -20px;
+    position: absolute;
+    color: green;
+    background-color: lightgreen;
+    border: 1px solid magenta;
+    padding: 4px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    opacity: 1;
+}
+
+a[href]::after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin: 5px;
+    background-repeat: no-repeat;
+    background-size: contain; 
+}
+
+a[href$=".pdf"]::after {
+    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/PDF_file_icon.svg/1667px-PDF_file_icon.svg.png);
+    background-repeat: no-repeat;
+    background-size: contain; 
+}
+
+a[href$=".docx"]::after {
+    background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Google_Docs_logo_%282014-2020%29.svg/1481px-Google_Docs_logo_%282014-2020%29.svg.png);
+    background-repeat: no-repeat;
+    background-size: contain; 
+}
+
+
+
 
 /* 1. first-letter, first-line */ 
 
