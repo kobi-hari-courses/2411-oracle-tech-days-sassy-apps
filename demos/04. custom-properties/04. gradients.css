@@ -24,8 +24,22 @@ div {
   border-radius: 20px;
 }
 
+@property --direction {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0deg;
+}
+
 div:nth-child(1) {
-  background-image: linear-gradient(yellow, red);
+  --color-1: black;
+  --color-2: red;
+  --direction: 0deg;
+  transition: --direction 0.5s;
+  background-image: linear-gradient(var(--direction), var(--color-1), var(--color-2));
+}
+
+div:nth-child(1):hover {
+  --direction: 360deg;
 }
 
 div:nth-child(2) {

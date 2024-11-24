@@ -10,6 +10,7 @@ html, body {
 }
 
 :root {
+    --kobi: green;
 }
 
 body {
@@ -21,6 +22,7 @@ body {
 .colors {
     display: flex;
     flex-direction: row;
+    --kobi: lime;
 }
 
 .colors div::before {
@@ -31,10 +33,15 @@ body {
 .colors div:nth-child(2n):before {
 }
 
+.colors div:nth-child(3n) {
+    --kobi: black;
+}
+
 .colors div {
     display: flex;    
     justify-content: center;
-    align-items: center;    
+    align-items: center;  
+    --kobi: white;  
 
     width: 100px;
     height: 100px;

@@ -1,0 +1,30 @@
+@use 'sass:color';
+
+@mixin go($color: blue) {
+    --primary: #{$color};
+
+    --p-500: var(--primary);
+    --p-400: color-mix(in srgb, var(--primary), white 20%);
+    --p-300: color-mix(in srgb, var(--primary), white 40%);
+    --p-200: color-mix(in srgb, var(--primary), white 60%);
+    --p-100: color-mix(in srgb, var(--primary), white 80%);
+    --p-600: color-mix(in srgb, var(--primary), black 20%);
+    --p-700: color-mix(in srgb, var(--primary), black 40%);
+    --p-800: color-mix(in srgb, var(--primary), black 60%);
+    --p-900: color-mix(in srgb, var(--primary), black 80%);
+
+}
+
+// @mixin go($primary) {
+//     @for $i from 1 through 4 {
+//         $color: color.scale($primary, $lightness: 100% - $i * 10%);
+//         --p-#{$i}00: #{$color};
+//     }
+
+//     --p-500: #{$primary};
+
+//     @for $i from 1 through 4 {
+//         $color: color.scale($primary, $lightness: (5 - $i) * 10% - 100%);
+//         --p-#{$i + 5}00: #{$color};
+//     }
+// }

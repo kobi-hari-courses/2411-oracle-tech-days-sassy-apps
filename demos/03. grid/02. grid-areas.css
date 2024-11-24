@@ -17,6 +17,30 @@ body {
     display: grid;
     grid-template-columns: [first] 200px [x y] 1fr [x z] 40px [last];
     grid-template-rows: 50px 1fr 1fr 50px;
+    grid-template-areas: "toolbar toolbar toolbar"
+                         "sidebar main hint"
+                         "sidebar main ."
+                         "status status status";
+}
+
+.toolbar {
+    grid-area: toolbar;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.hint {
+    grid-area: hint;
+}
+
+.status {
+    grid-area: status;
+}
+
+.main {
+    grid-area: main;
 }
 
 .grid-item {
@@ -52,4 +76,17 @@ body {
 
 .grid-item:nth-child(5) {
     background: gray;
+}
+
+@media screen and (max-width: 400px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto 1fr auto;
+        grid-template-areas: "toolbar"
+        "hint"
+        "sidebar"
+        "main"
+        "status";
+    }
+    
 }

@@ -1,0 +1,21 @@
+
+@use 'theme';
+
+$my-colors: blue, red, green, brown;
+
+div {
+    color: var(--p-500);
+    background-color: var(--p-100);
+    border: 2px solid var(--p-800);
+}
+
+div.change-on-hover:hover {
+    --primary: darkcyan;
+}
+
+
+@each $color in $my-colors {
+  .special-#{$color} {
+    @include theme.go($color);
+  }
+}

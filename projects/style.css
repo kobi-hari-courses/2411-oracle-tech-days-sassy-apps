@@ -1,0 +1,61 @@
+div {
+  color: var(--p-500);
+  background-color: var(--p-100);
+  border: 2px solid var(--p-800);
+}
+
+div.change-on-hover:hover {
+  --primary: darkcyan;
+}
+
+.special-blue {
+  --primary: blue;
+  --p-500: var(--primary);
+  --p-400: color-mix(in srgb, var(--primary), white 20%);
+  --p-300: color-mix(in srgb, var(--primary), white 40%);
+  --p-200: color-mix(in srgb, var(--primary), white 60%);
+  --p-100: color-mix(in srgb, var(--primary), white 80%);
+  --p-600: color-mix(in srgb, var(--primary), black 20%);
+  --p-700: color-mix(in srgb, var(--primary), black 40%);
+  --p-800: color-mix(in srgb, var(--primary), black 60%);
+  --p-900: color-mix(in srgb, var(--primary), black 80%);
+}
+
+.special-red {
+  --primary: red;
+  --p-500: var(--primary);
+  --p-400: color-mix(in srgb, var(--primary), white 20%);
+  --p-300: color-mix(in srgb, var(--primary), white 40%);
+  --p-200: color-mix(in srgb, var(--primary), white 60%);
+  --p-100: color-mix(in srgb, var(--primary), white 80%);
+  --p-600: color-mix(in srgb, var(--primary), black 20%);
+  --p-700: color-mix(in srgb, var(--primary), black 40%);
+  --p-800: color-mix(in srgb, var(--primary), black 60%);
+  --p-900: color-mix(in srgb, var(--primary), black 80%);
+}
+
+.special-green {
+  --primary: green;
+  --p-500: var(--primary);
+  --p-400: color-mix(in srgb, var(--primary), white 20%);
+  --p-300: color-mix(in srgb, var(--primary), white 40%);
+  --p-200: color-mix(in srgb, var(--primary), white 60%);
+  --p-100: color-mix(in srgb, var(--primary), white 80%);
+  --p-600: color-mix(in srgb, var(--primary), black 20%);
+  --p-700: color-mix(in srgb, var(--primary), black 40%);
+  --p-800: color-mix(in srgb, var(--primary), black 60%);
+  --p-900: color-mix(in srgb, var(--primary), black 80%);
+}
+
+.special-brown {
+  --primary: brown;
+  --p-500: var(--primary);
+  --p-400: color-mix(in srgb, var(--primary), white 20%);
+  --p-300: color-mix(in srgb, var(--primary), white 40%);
+  --p-200: color-mix(in srgb, var(--primary), white 60%);
+  --p-100: color-mix(in srgb, var(--primary), white 80%);
+  --p-600: color-mix(in srgb, var(--primary), black 20%);
+  --p-700: color-mix(in srgb, var(--primary), black 40%);
+  --p-800: color-mix(in srgb, var(--primary), black 60%);
+  --p-900: color-mix(in srgb, var(--primary), black 80%);
+}

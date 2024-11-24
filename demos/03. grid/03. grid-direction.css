@@ -30,17 +30,14 @@ body {
 }
 
 .grid-item:nth-child(5) {
-    grid-row: span 2;
     background-color: pink;
 }
 
 .grid-item:nth-child(3) {
-    grid-column: span 3;
     background-color: lime;
 }
 
 .grid-item:nth-child(4) {
-    grid-column: 2;
     background-color: teal;
 }
 
